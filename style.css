@@ -1,0 +1,195 @@
+
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Centering the Container */
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Card Container */
+.container {
+    display: flex;
+    gap: 0;
+    max-width: 900px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Card Styling */
+.card {
+    flex: 1;
+    padding: 40px;
+    color: white;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Background Colors */
+.sedan {
+    background-color: #E38948;
+}
+
+.suv {
+    background-color: #015D5E;
+}
+
+.luxury {
+    background-color: #002A29;
+}
+
+/* Icon Styling */
+.icon img {
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+/* Typography */
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+}
+
+/* Button Styling */
+.btna {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #E38948;
+}
+
+.btnb {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #015D5E;
+}
+
+.btnc {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #002A29;
+}
+
+.btna:hover {
+    background: #E38948;
+    color: white;
+}
+
+.btnb:hover {
+    background: #015D5E;
+    color: white;
+}
+
+.btnc:hover {
+    background: #002A29;
+    color: white;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .icon img {
+        width: 35px; 
+    }
+
+    h2 {
+        font-size: 20px; 
+    }
+
+    p {
+        font-size: 13px; 
+    }
+
+    .btna, .btnb, .btnc {
+        padding: 8px 20px; 
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%; 
+    }
+
+    .card {
+        height: 100%;
+        width: 100%;
+        padding: 20px; 
+        text-align: center;
+        min-height: auto; 
+    }
+
+    .icon img {
+        width: 30px; 
+    }
+
+    h2 {
+        font-size: 18px; 
+    }
+
+    p {
+        font-size: 12px; 
+    }
+
+    .btna, .btnb, .btnc {
+        padding: 8px 18px; 
+        font-size: 12px; 
+    }
+}
+
